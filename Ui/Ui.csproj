@@ -186,11 +186,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="Data\DogRepository.cs" />
+    <Compile Include="Data\IDogOwnerRepository.cs" />
+    <Compile Include="Data\IDogRepository.cs" />
     <Compile Include="DependencyResolution\ControllerConvention.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
     <Compile Include="DependencyResolution\StructureMapScopeModule.cs" />
+    <Compile Include="Entities\Animal.cs" />
+    <Compile Include="Entities\Dog.cs" />
+    <Compile Include="Entities\IAnimal.cs" />
     <Compile Include="Models\DogOwnerListViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RobsDogsController.cs" />
@@ -202,7 +208,11 @@
     <Compile Include="Models\DogOwnerViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DogOwnerService.cs" />
+    <Compile Include="Services\DogService.cs" />
+    <Compile Include="Services\IDogOwnerService.cs" />
+    <Compile Include="Services\IDogService.cs" />
     <Compile Include="ViewModelMappers\DogOwnerViewModelMapper.cs" />
+    <Compile Include="ViewModelMappers\IDogOwnerViewModelMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -270,16 +280,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49331</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49331/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

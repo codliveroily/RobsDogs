@@ -1,8 +1,15 @@
-﻿namespace Ui.Entities
+﻿using System.Collections.Generic;
+
+namespace Ui.Entities
 {
 	public class DogOwner
 	{
-		public string OwnerName { get; set; }
-		public string DogName { get; set; }
+		public DogOwner()
+		{
+			Dogs = new List<Dog>();
+		}
+		public string Name { get; set; }
+
+		public virtual List<Dog> Dogs { get; set; }		
 	}
 }
